@@ -20,7 +20,6 @@
 @property (nonatomic, weak) id<MessageDelegate>messageDelegate;
 @property (nonatomic) XMPPStream *xmppStream;
 @property (nonatomic) XMPPRoom *xmppRoom;
-@property (nonatomic) NSString *password;
 @property (nonatomic) BOOL isOpen;
 
 + (instancetype)sharedManager;
