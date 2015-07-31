@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC257C2A1B6AFB3200786383 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC257C291B6AFB3200786383 /* main.m */; };
+		FC257C2D1B6AFB3200786383 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC257C2C1B6AFB3200786383 /* AppDelegate.m */; };
+		FC257C301B6AFB3200786383 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC257C2F1B6AFB3200786383 /* ViewController.m */; };
+		FC257C331B6AFB3200786383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC257C311B6AFB3200786383 /* Main.storyboard */; };
+		FC257C351B6AFB3200786383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC257C341B6AFB3200786383 /* Images.xcassets */; };
+		FC257C381B6AFB3200786383 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC257C361B6AFB3200786383 /* LaunchScreen.xib */; };
+		FC257C441B6AFB3200786383 /* XMPPGroupChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC257C431B6AFB3200786383 /* XMPPGroupChatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC257C3E1B6AFB3200786383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC257C1C1B6AFB3200786383 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC257C231B6AFB3200786383;
+			remoteInfo = XMPPGroupChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC257C241B6AFB3200786383 /* XMPPGroupChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMPPGroupChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC257C281B6AFB3200786383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC257C291B6AFB3200786383 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC257C2B1B6AFB3200786383 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FC257C2C1B6AFB3200786383 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FC257C2E1B6AFB3200786383 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FC257C2F1B6AFB3200786383 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC257C321B6AFB3200786383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC257C341B6AFB3200786383 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FC257C371B6AFB3200786383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FC257C3D1B6AFB3200786383 /* XMPPGroupChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMPPGroupChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC257C421B6AFB3200786383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC257C431B6AFB3200786383 /* XMPPGroupChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMPPGroupChatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC257C211B6AFB3200786383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC257C3A1B6AFB3200786383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC257C1B1B6AFB3200786383 = {
+			isa = PBXGroup;
+			children = (
+				FC257C261B6AFB3200786383 /* XMPPGroupChat */,
+				FC257C401B6AFB3200786383 /* XMPPGroupChatTests */,
+				FC257C251B6AFB3200786383 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC257C251B6AFB3200786383 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC257C241B6AFB3200786383 /* XMPPGroupChat.app */,
+				FC257C3D1B6AFB3200786383 /* XMPPGroupChatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC257C261B6AFB3200786383 /* XMPPGroupChat */ = {
+			isa = PBXGroup;
+			children = (
+				FC257C2B1B6AFB3200786383 /* AppDelegate.h */,
+				FC257C2C1B6AFB3200786383 /* AppDelegate.m */,
+				FC257C2E1B6AFB3200786383 /* ViewController.h */,
+				FC257C2F1B6AFB3200786383 /* ViewController.m */,
+				FC257C311B6AFB3200786383 /* Main.storyboard */,
+				FC257C341B6AFB3200786383 /* Images.xcassets */,
+				FC257C361B6AFB3200786383 /* LaunchScreen.xib */,
+				FC257C271B6AFB3200786383 /* Supporting Files */,
+			);
+			path = XMPPGroupChat;
+			sourceTree = "<group>";
+		};
+		FC257C271B6AFB3200786383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC257C281B6AFB3200786383 /* Info.plist */,
+				FC257C291B6AFB3200786383 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FC257C401B6AFB3200786383 /* XMPPGroupChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC257C431B6AFB3200786383 /* XMPPGroupChatTests.m */,
+				FC257C411B6AFB3200786383 /* Supporting Files */,
+			);
+			path = XMPPGroupChatTests;
+			sourceTree = "<group>";
+		};
+		FC257C411B6AFB3200786383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC257C421B6AFB3200786383 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC257C231B6AFB3200786383 /* XMPPGroupChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC257C471B6AFB3200786383 /* Build configuration list for PBXNativeTarget "XMPPGroupChat" */;
+			buildPhases = (
+				FC257C201B6AFB3200786383 /* Sources */,
+				FC257C211B6AFB3200786383 /* Frameworks */,
+				FC257C221B6AFB3200786383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMPPGroupChat;
+			productName = XMPPGroupChat;
+			productReference = FC257C241B6AFB3200786383 /* XMPPGroupChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC257C3C1B6AFB3200786383 /* XMPPGroupChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC257C4A1B6AFB3200786383 /* Build configuration list for PBXNativeTarget "XMPPGroupChatTests" */;
+			buildPhases = (
+				FC257C391B6AFB3200786383 /* Sources */,
+				FC257C3A1B6AFB3200786383 /* Frameworks */,
+				FC257C3B1B6AFB3200786383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC257C3F1B6AFB3200786383 /* PBXTargetDependency */,
+			);
+			name = XMPPGroupChatTests;
+			productName = XMPPGroupChatTests;
+			productReference = FC257C3D1B6AFB3200786383 /* XMPPGroupChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC257C1C1B6AFB3200786383 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Dylan Shine";
+				TargetAttributes = {
+					FC257C231B6AFB3200786383 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					FC257C3C1B6AFB3200786383 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = FC257C231B6AFB3200786383;
+					};
+				};
+			};
+			buildConfigurationList = FC257C1F1B6AFB3200786383 /* Build configuration list for PBXProject "XMPPGroupChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC257C1B1B6AFB3200786383;
+			productRefGroup = FC257C251B6AFB3200786383 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC257C231B6AFB3200786383 /* XMPPGroupChat */,
+				FC257C3C1B6AFB3200786383 /* XMPPGroupChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC257C221B6AFB3200786383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC257C331B6AFB3200786383 /* Main.storyboard in Resources */,
+				FC257C381B6AFB3200786383 /* LaunchScreen.xib in Resources */,
+				FC257C351B6AFB3200786383 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC257C3B1B6AFB3200786383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC257C201B6AFB3200786383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC257C301B6AFB3200786383 /* ViewController.m in Sources */,
+				FC257C2D1B6AFB3200786383 /* AppDelegate.m in Sources */,
+				FC257C2A1B6AFB3200786383 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC257C391B6AFB3200786383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC257C441B6AFB3200786383 /* XMPPGroupChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC257C3F1B6AFB3200786383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC257C231B6AFB3200786383 /* XMPPGroupChat */;
+			targetProxy = FC257C3E1B6AFB3200786383 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC257C311B6AFB3200786383 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC257C321B6AFB3200786383 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC257C361B6AFB3200786383 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC257C371B6AFB3200786383 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC257C451B6AFB3200786383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FC257C461B6AFB3200786383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC257C481B6AFB3200786383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XMPPGroupChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FC257C491B6AFB3200786383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = XMPPGroupChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FC257C4B1B6AFB3200786383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XMPPGroupChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMPPGroupChat.app/XMPPGroupChat";
+			};
+			name = Debug;
+		};
+		FC257C4C1B6AFB3200786383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = XMPPGroupChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XMPPGroupChat.app/XMPPGroupChat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC257C1F1B6AFB3200786383 /* Build configuration list for PBXProject "XMPPGroupChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC257C451B6AFB3200786383 /* Debug */,
+				FC257C461B6AFB3200786383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC257C471B6AFB3200786383 /* Build configuration list for PBXNativeTarget "XMPPGroupChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC257C481B6AFB3200786383 /* Debug */,
+				FC257C491B6AFB3200786383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FC257C4A1B6AFB3200786383 /* Build configuration list for PBXNativeTarget "XMPPGroupChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC257C4B1B6AFB3200786383 /* Debug */,
+				FC257C4C1B6AFB3200786383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC257C1C1B6AFB3200786383 /* Project object */;
+}
