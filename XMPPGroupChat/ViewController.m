@@ -50,6 +50,11 @@
 }
 
 - (IBAction)sendButton:(id)sender {
+    NSString *messageString = self.messageField.text;
+    
+    if([messageString length] > 0) {
+        [self.xmppManager.xmppRoom sendMessageWithBody:messageString];
+    }
 }
 
 @end
