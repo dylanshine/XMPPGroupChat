@@ -15,6 +15,7 @@
 		FC257C351B6AFB3200786383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC257C341B6AFB3200786383 /* Images.xcassets */; };
 		FC257C381B6AFB3200786383 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC257C361B6AFB3200786383 /* LaunchScreen.xib */; };
 		FC257C441B6AFB3200786383 /* XMPPGroupChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FC257C431B6AFB3200786383 /* XMPPGroupChatTests.m */; };
+		FC257C521B6B064C00786383 /* XMPPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FC257C511B6B064C00786383 /* XMPPManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		FC257C3D1B6AFB3200786383 /* XMPPGroupChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMPPGroupChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC257C421B6AFB3200786383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC257C431B6AFB3200786383 /* XMPPGroupChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMPPGroupChatTests.m; sourceTree = "<group>"; };
+		FC257C501B6B064C00786383 /* XMPPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMPPManager.h; sourceTree = "<group>"; };
+		FC257C511B6B064C00786383 /* XMPPManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMPPManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				FC257C341B6AFB3200786383 /* Images.xcassets */,
 				FC257C361B6AFB3200786383 /* LaunchScreen.xib */,
 				FC257C271B6AFB3200786383 /* Supporting Files */,
+				FC257C501B6B064C00786383 /* XMPPManager.h */,
+				FC257C511B6B064C00786383 /* XMPPManager.m */,
 			);
 			path = XMPPGroupChat;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC257C521B6B064C00786383 /* XMPPManager.m in Sources */,
 				FC257C301B6AFB3200786383 /* ViewController.m in Sources */,
 				FC257C2D1B6AFB3200786383 /* AppDelegate.m in Sources */,
 				FC257C2A1B6AFB3200786383 /* main.m in Sources */,
