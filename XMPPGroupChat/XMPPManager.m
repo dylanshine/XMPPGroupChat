@@ -50,6 +50,8 @@
     }
 }
 
-
+- (void)disconnect {
+    [self.xmppStream disconnect];
+}
 
 @end
