@@ -42,4 +42,14 @@
     
 }
 
+-(void)xmppStreamDidConnect:(XMPPStream *)sender {
+    self.isOpen = YES;
+    NSError *error;
+    if (![self.xmppStream authenticateAnonymously:&error]) {
+         NSLog(@"Error: %@", [error localizedDescription]);
+    }
+}
+
+
+
 @end
