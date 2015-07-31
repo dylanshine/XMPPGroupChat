@@ -7,22 +7,27 @@
 //
 
 #import "AppDelegate.h"
+#import "XMPPManager.h"
+#import <CocoaLumberjack/DDLog.h>
+#import <CocoaLumberjack/DDTTYLogger.h>
+#import <XMPPLogging.h>
 
 @interface AppDelegate ()
-
+@property (nonatomic) XMPPManager *xmppManager;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [DDLog addLogger:[DDTTYLogger sharedInstance] withLogLevel:~0];
+
+    self.xmppManager = [XMPPManager sharedManager];
     return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+    [self.xmppManager disconnect];
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
@@ -35,7 +40,7 @@
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [self.xmppManager connect];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
