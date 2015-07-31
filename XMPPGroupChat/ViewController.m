@@ -55,6 +55,8 @@
     if([messageString length] > 0) {
         [self.xmppManager.xmppRoom sendMessageWithBody:messageString];
     }
+    
+    self.messageField.text = @"";
 }
 
 -(void)messageReceived:(NSDictionary *)message {
