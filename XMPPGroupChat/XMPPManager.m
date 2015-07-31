@@ -22,7 +22,7 @@
 
 -(BOOL)connect {
     self.xmppStream = [[XMPPStream alloc] init];
-    [self.xmppStream setHostName:@"localhost"];
+    self.xmppStream.hostName = @"lasonic.local";
     [self.xmppStream addDelegate:self
                    delegateQueue:dispatch_get_main_queue()];
     
@@ -50,11 +50,15 @@
     }
 }
 
+- (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
+    [self joinOrCreateRoom];
+}
+
 -(void)disconnect {
     [self.xmppStream disconnect];
 }
 
--(void)joinOrCreateRoom:(NSString *)room {
+-(void)joinOrCreateRoom {
     XMPPRoomMemoryStorage *roomMemory = [[XMPPRoomMemoryStorage alloc]init];
     XMPPJID  *roomJID = [XMPPJID jidWithString:@"chat@conference.lasonic.local"];
     self.xmppRoom = [[XMPPRoom alloc] initWithRoomStorage:roomMemory
