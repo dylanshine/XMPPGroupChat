@@ -23,7 +23,7 @@
 @property (nonatomic) BOOL isOpen;
 
 + (instancetype)sharedManager;
--(void)joinOrCreateRoom:(NSString *)room;
+-(void)joinOrCreateRoom;
 -(BOOL)connect;
 -(void)disconnect;
 
