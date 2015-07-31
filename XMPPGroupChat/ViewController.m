@@ -20,7 +20,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.xmppManager = [XMPPManager sharedManager];
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.xmppManager.messageDelegate = self;
+    self.messages = [[NSMutableArray alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
