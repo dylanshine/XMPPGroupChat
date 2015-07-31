@@ -57,4 +57,16 @@
     }
 }
 
+-(void)messageReceived:(NSDictionary *)message {
+    [self.messages addObject:message];
+    [self.tableView reloadData];
+    
+    NSIndexPath *topIndexPath = [NSIndexPath indexPathForRow:self.messages.count-1
+                                                   inSection:0];
+    
+    [self.tableView scrollToRowAtIndexPath:topIndexPath
+                          atScrollPosition:UITableViewScrollPositionMiddle
+                                  animated:YES];
+}
+
 @end
