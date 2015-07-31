@@ -7,9 +7,13 @@
 //
 
 #import "ViewController.h"
+#import "XMPPManager.h"
 
-@interface ViewController ()
-
+@interface ViewController () <UITableViewDelegate,UITableViewDataSource,MessageDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *messageField;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic) XMPPManager *xmppManager;
+@property (nonatomic) NSMutableArray *messages;
 @end
 
 @implementation ViewController
@@ -22,6 +26,8 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)sendButton:(id)sender {
 }
 
 @end
