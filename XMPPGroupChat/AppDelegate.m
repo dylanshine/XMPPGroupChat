@@ -8,9 +8,7 @@
 
 #import "AppDelegate.h"
 #import "XMPPManager.h"
-#import <CocoaLumberjack/DDLog.h>
-#import <CocoaLumberjack/DDTTYLogger.h>
-#import <XMPPLogging.h>
+
 
 @interface AppDelegate ()
 @property (nonatomic) XMPPManager *xmppManager;
@@ -20,7 +18,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [DDLog addLogger:[DDTTYLogger sharedInstance] withLogLevel:~0];
 
     self.xmppManager = [XMPPManager sharedManager];
     return YES;
