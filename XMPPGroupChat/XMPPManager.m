@@ -20,4 +20,26 @@
     return _sharedManager;
 }
 
+-(BOOL)connect {
+    self.xmppStream = [[XMPPStream alloc] init];
+    [self.xmppStream setHostName:@"localhost"];
+    [self.xmppStream addDelegate:self
+                   delegateQueue:dispatch_get_main_queue()];
+    
+    if (![self.xmppStream isDisconnected]) {
+        return YES;
+    }
+    
+    [self.xmppStream setMyJID:[XMPPJID jidWithString:@"chat@lasonic.local"]];
+    
+    NSError *error;
+    if (![self.xmppStream connectWithTimeout:10 error:&error]) {
+        NSLog(@"Error: %@", [error localizedDescription]);
+        return NO;
+    }
+    
+    return YES;
+    
+}
+
 @end
