@@ -31,6 +31,24 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [self.messages count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSDictionary *messagesDict = (NSDictionary *)self.messages[indexPath.row];
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"messageCell" forIndexPath:indexPath];
+    
+    cell.textLabel.text = [messagesDict objectForKey:@"message"];
+    cell.accessoryType = UITableViewCellAccessoryNone;
+    cell.userInteractionEnabled = NO;
+    
+    return cell;
+}
+
 - (IBAction)sendButton:(id)sender {
 }
 
