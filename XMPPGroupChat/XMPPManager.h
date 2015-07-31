@@ -7,9 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <XMPP.h>
+#import <XMPPRoomMemoryStorage.h>
+
+
+@protocol MessageDelegate <NSObject>
+@required
+- (void)messageReceived:(NSDictionary *)message;
+@end
 
 @interface XMPPManager : NSObject
+@property (nonatomic, weak) id<MessageDelegate>messageDelegate;
+@property (nonatomic) XMPPStream *xmppStream;
+@property (nonatomic) XMPPRoom *xmppRoom;
+@property (nonatomic) NSString *password;
+@property (nonatomic) BOOL isOpen;
 
 + (instancetype)sharedManager;
+-(void)joinOrCreateRoom:(NSString *)room;
+-(BOOL)connect;
+-(void)disconnect;
 
 @end
