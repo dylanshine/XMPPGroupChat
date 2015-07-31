@@ -50,8 +50,30 @@
     }
 }
 
-- (void)disconnect {
+-(void)disconnect {
     [self.xmppStream disconnect];
+}
+
+-(void)joinOrCreateRoom:(NSString *)room {
+    XMPPRoomMemoryStorage *roomMemory = [[XMPPRoomMemoryStorage alloc]init];
+    XMPPJID  *roomJID = [XMPPJID jidWithString:@"chat@conference.lasonic.local"];
+    self.xmppRoom = [[XMPPRoom alloc] initWithRoomStorage:roomMemory
+                                                      jid:roomJID
+                                            dispatchQueue:dispatch_get_main_queue()];
+    [self.xmppRoom activate:self.xmppStream];
+    [self.xmppRoom addDelegate:self delegateQueue:dispatch_get_main_queue()];
+    [self.xmppRoom joinRoomUsingNickname:[self createUUID]
+                                 history:nil
+                                password:nil];
+}
+
+-(NSString *)createUUID {
+    
+    CFUUIDRef uuid = CFUUIDCreate(kCFAllocatorDefault);
+    NSString *uuidString = (__bridge_transfer NSString *)CFUUIDCreateString(kCFAllocatorDefault, uuid);
+    CFRelease(uuid);
+    
+    return uuidString;
 }
 
 @end
