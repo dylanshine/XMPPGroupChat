@@ -76,4 +76,14 @@
     return uuidString;
 }
 
+-(void)xmppRoom:(XMPPRoom *)sender didReceiveMessage:(XMPPMessage *)message fromOccupant:(XMPPJID *)occupantJID {
+    NSString *msg = [[message elementForName:@"body"] stringValue];
+    
+    NSDictionary *messageDict = @{@"message":msg};
+    
+    if ([msg length]) {
+        [self.messageDelegate messageReceived:messageDict];
+    }
+}
+
 @end
